@@ -1,10 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lukman EL HADI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lukman EL HADI</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0f0f0f;
+      color:white;
+      line-height:1.6;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    .hero img{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid white;
+      margin-bottom:30px;
+      box-shadow:0 0 30px rgba(255,255,255,0.15);
+    }
+
+    h1{
+      font-size:4rem;
+      margin-bottom:10px;
+      letter-spacing:1px;
+    }
+
+    .subtitle{
+      font-size:1.3rem;
+      color:#cfcfcf;
+      margin-bottom:25px;
+    }
+
+    .description{
+      max-width:700px;
+      margin:auto;
+      color:#b0b0b0;
+      font-size:1.05rem;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 26px;
+      border:1px solid white;
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      border-radius:10px;
+    }
+
+    .btn:hover{
+      background:white;
+      color:black;
+    }
+
+    section{
+      padding:90px 0;
+    }
+
+    h2{
+      font-size:2.2rem;
+      margin-bottom:40px;
+      text-align:center;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#181818;
+      padding:30px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(255,255,255,0.25);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:1.3rem;
+    }
+
+    .card p{
+      color:#bdbdbd;
+    }
+
+    footer{
+      padding:50px 20px;
+      text-align:center;
+      color:#888;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+
+  </style>
 </head>
+
 <body>
+
+<header>
+  <div class="hero">
+
+    <img src="profile.jpg" alt="Lukman EL HADI">
+
     <h1>Lukman EL HADI</h1>
-    <p>Quantitative Finance & Research</p>
+
+    <p class="subtitle">
+      Quantitative Finance • Machine Learning • Research
+    </p>
+
+    <p class="description">
+      Engineering graduate from Centrale Nantes and Master’s student in Mathematics and Finance at Paris 1 Panthéon-Sorbonne.
+      Interested in quantitative finance, stochastic modeling, energy markets and machine learning research.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="lukman_EL_HADI_resume_internship.pdf" target="_blank">
+        View CV
+      </a>
+
+      <a class="btn" href="https://linkedin.com" target="_blank">
+        LinkedIn
+      </a>
+
+      <a class="btn" href="https://github.com" target="_blank">
+        GitHub
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<section class="container">
+
+  <h2>Projects</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Electricity Price Modeling</h3>
+
+      <p>
+        Probabilistic forecasting model for electricity prices with volatility diagnostics,
+        uncertainty estimation and risk indicators.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Lookback Options under Heston</h3>
+
+      <p>
+        Monte Carlo pricing framework for exotic derivatives under stochastic volatility
+        with Greeks and hedging analysis.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>PET Reconstruction Research</h3>
+
+      <p>
+        Implicit neural representations for PET image reconstruction with stabilized
+        normalization and physics-based operators.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Lukman EL HADI
+</footer>
+
 </body>
 </html>
